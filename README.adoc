@@ -49,37 +49,41 @@ Charges do apply. Do not set the Counts to a high number. The CDK app will deplo
 
 ---
 . How can I configure the CDK app to use environment variables to set the CDK app name?
-.. Create an environment variable
-.. Get the environment variable value
 .. Make sure you set the default in the `.py` files 
+.. Get the environment variable value, see source code for how to get the environment variable value
+.. Create an environment variable, source code uses `applicationName`
 [source, bash]
 export applicationName=<SET-APP-NAME>
 
 
 
 . How can I configure the CDK app to use environment variables to set the region and account?
-.. Create an environment variable
+.. Make sure you set the defaults  in the `.py` files
+.. Get the environment variable value, see source code for how to get the environment variable value 
 .. If you dont set the region and account, the CDK defaults are used
-.. Get the environment variable value
-.. Make sure you set the defaults  in the `.py` files 
+.. Create the environment variables, source code uses `DEPLOY_REGION` and `DEPLOY_ACCOUNT`
 [source, bash]
 export DEPLOY_REGION<SET-REGION>
 export DEPLOY_ACCOUNT=<SET-ACCOUNT>
 
 . How can I configure the CDK app to use environment variables to set the resource names based on a list?
-.. Create an environment variable for each resource. For this code, we set the following:
-... S3 bucket name
-... SQS queue name
-.. Get the environment variable values for each resource name
+..  For this code, we use the following list:
+... S3 bucket name(s), a string of bucket names separated by a comma
+
 .. Make sure you set the defaults  in the `{repo-name}.py` file in the {repo-name} directory
 .. `BUCKET_NAMES` is a string of bucket names separated by a comma. The code will split the string and create a list of bucket names.
 .. If you set the string to `bucket1,bucket2,bucket3`, the code will create 3 buckets with the names `bucket1`, `bucket2`, and `bucket3`
 .. If you remove a bucket name from the string and deploy, the bucket name that was removed from the string will be deleted
 .. If you add a bucket name to the string and deploy, the bucket name that was added to the string will be created
+.. Get the environment variable values for each resource name, see source code for how to get the environment variable value
+.. Create the environment variables, source code uses `BUCKET_NAMES`
 [source, bash]
 export BUCKET_NAMES=<SET-BUCKET-NAME> 
 
+
 . How can I configure the CDK app to use environment variables to set the base name and resource quantity?
+..  For this code, we use the following base name and resource quantity:
+... SQS queue name, a string of queue names separated by a comma
 .. Create an environment variable count for resources you want to deploy based on a base name + some resource countID
 .. In this solution if you set the QUEUE_NAME to `queue` and the QUEUE_COUNT to `3`, the code will create 3 queues with the names `queue1`, `queue2`, and `queue3`
 [source, bash]
