@@ -110,6 +110,8 @@ git clone https://github.com/aws-samples/configurable-dynamic-cdk-resource-provi
 
 . Install python3
 
+. Install TypeScript
+
 
 . Install CDK Toolkit globally pass:[<strong><u>(If you don't have it installed already)</u></strong>]
 [source,bash]
