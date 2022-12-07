@@ -106,13 +106,11 @@ You need to make sure your resources are unique every time a new stack is deploy
 git clone https://github.com/aws-samples/configurable-dynamic-cdk-resource-provisioning-python.git
 
 == Prerequisites
-
-
-=== Installing CDK Toolkit globally pass:[<strong><u>(If you don't have it installed already)</u></strong>]
+. Install CDK Toolkit globally pass:[<strong><u>(If you don't have it installed already)</u></strong>]
 [source,bash]
 npm install -g aws-cdk
 
-=== Bootstrap account/region pass:[<strong><u>(If you have not bootstrapped it already)</u></strong>]
+. Bootstrap account/region pass:[<strong><u>(If you have not bootstrapped it already)</u></strong>]
 [source,bash]
 cdk bootstrap aws://<ACCOUNT>/<REGION> OR --profile <PROFILE>
 
