@@ -1,6 +1,6 @@
 // MetaData
 :repo-name: CONFIGURABLE-DYNAMIC-CDK-RESOURCE-PROVISIONING-PYTHON
-:application-name: deploy-cdk-app
+:application-name: CONFIGURABLE-DYNAMIC-CDK-RESOURCE-PROVISIONING-PYTHON
 
 
 
@@ -20,7 +20,7 @@ This repository contains source code to configure a CDK app via environment vari
 . How can you configure the CDK app to use environment variables to set the CDK app name?
 . How can you configure the CDK app to use environment variables to set the region and account?
 . How can you configure the CDK app to use environment variables to set the resource names and quantity using a list?
-. How can you configure the CDK app to use environment variables to set the resource name & quantity?
+. How can you configure the CDK app to use environment variables to set the resource name & quantity with env?
 . How can you configure the CDK app to use environment variables to keep state and/while allowing for dynamic configuration?
 
 == Solution
