@@ -5,7 +5,7 @@
 
 
 
-= How to configure a CDK App and dynamically provision resource quantities 
+= How to configure a CDK App and dynamically provision resource quantities in Python
 
 
 == Overview
