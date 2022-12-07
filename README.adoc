@@ -74,8 +74,8 @@ export DEPLOY_ACCOUNT=<SET-ACCOUNT>
 .. Make sure you set the default name also in the `{repo-name}.py` file in the {repo-name} directory
 .. `BUCKET NAMES` is a string of bucket names separated by a comma. The code will split the string and create a list of bucket names.
 .. If set the string to `bucket1,bucket2,bucket3` the code will create 3 buckets with the names `bucket1`, `bucket2`, and `bucket3`
-.. If you remove a bucket name from the string and deploy, the bucket name was was removed from the string will be deleted
-.. If you add a bucket name to the string and deploy, the bucket name was was added to the string will be created
+.. If you remove a bucket name from the string and deploy, the bucket name that was removed from the string will be deleted
+.. If you add a bucket name to the string and deploy, the bucket name that was added to the string will be created
 [source, bash]
 export BUCKET_NAMES=<SET-BUCKET-NAME> 
 
@@ -87,6 +87,7 @@ export NUMBER_OF_QUEUES=<SET-QUEUE-COUNT>
 export QUEUE_NAME=<SET-QUEUE-NAME> 
 
 . How can I configure the CDK app to use environment variables to keep state allowing for dynamic configuration?
+
 You need to make sure your resources are unique every time a new stack is deployed. In the code, a combination of the app name, region, and hashed account number are used to create a unique name for each resource. This allows you to deploy the same stack multiple times and not have resource name conflicts.
 
 [WARNING]
