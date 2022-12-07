@@ -22,5 +22,4 @@ venv.bak/
 cdk.out/
 .fake
 .git 
-buildspec.yaml 
-aggregated_results.txt
+
