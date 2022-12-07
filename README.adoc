@@ -105,8 +105,8 @@ You need to make sure your resources are unique every time a new stack is deploy
 [source,bash]
 git clone https://github.com/aws-samples/configurable-dynamic-cdk-resource-provisioning-python.git
 
-== USEFUL COMMANDS
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+== Prerequisites
+
 
 === Installing CDK Toolkit globally pass:[<strong><u>(If you don't have it installed already)</u></strong>]
 [source,bash]
@@ -116,6 +116,9 @@ npm install -g aws-cdk
 [source,bash]
 cdk bootstrap aws://<ACCOUNT>/<REGION> OR --profile <PROFILE>
 
+== Useful Commands
+
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 This project is set up like a standard Python project.  The initialization process also creates
 a virtualenv within this project, stored under the .venv directory.  To create the virtualenv
