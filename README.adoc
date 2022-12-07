@@ -58,7 +58,7 @@ export applicationName=<SET-APP-NAME>
 . How can I configure the CDK app to use environment variables to set the region and account?
 .. Make sure you set the defaults  in the `.py` files
 .. Get the environment variable value, see source code for how to get the environment variable value 
-.. If you dont set the region and account, the CDK defaults are used
+.. If you don't set the region and account, the CDK defaults are used
 .. Create the environment variables, source code uses `DEPLOY_REGION` and `DEPLOY_ACCOUNT`
 [source, bash]
 export DEPLOY_REGION<SET-REGION>
