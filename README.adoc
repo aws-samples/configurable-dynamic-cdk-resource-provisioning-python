@@ -11,7 +11,7 @@
 
 
 == Overview
-This repository contains source code to configure a CDK app via environment variables. The repo will show how you can through the environment variables configure the CDK app to provision resources dynamically. 
+This repository contains source code to configure a CDK app via environment variables. The repo will show how you can, through the environment variables, configure the CDK app to provision resources dynamically. 
 
 
 
@@ -110,7 +110,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 [source,bash]
 npm install -g aws-cdk
 
-=== Bootstrap account pass:[<strong><u>(If you have done it already)</u></strong>]
+=== Bootstrap account pass:[<strong><u>(If you have not done it already)</u></strong>]
 [source,bash]
 cdk bootstrap aws://<ACCOUNT>/<REGION> OR --profile <PROFILE>
 
