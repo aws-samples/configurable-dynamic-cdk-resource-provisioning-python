@@ -5,13 +5,11 @@
 
 
 
-= Configurable-Dynamic-CDK-Resource-provisioning-python
-
-
+= How to configure a CDK App and dynamically provision resource quantities 
 
 
 == Overview
-This repository contains source code to configure a CDK app via environment variables. The repo will show how you can, through the environment variables, configure the CDK app to provision resources dynamically while keeping the state for the app. 
+This repository contains source code to configure a CDK app via environment variables. The repo will show how you can, through the environment variables, configure the CDK app to provision resources dynamically while keeping the state for the app without having to add extra code when increasing a resource count. 
 
 
 
