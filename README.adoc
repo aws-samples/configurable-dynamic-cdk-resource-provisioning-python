@@ -11,7 +11,7 @@
 
 
 == Overview
-This repository contains source code to configure a CDK app via environment variables. The repo will show how you can, through the environment variables, configure the CDK app to provision resources dynamically. 
+This repository contains source code to configure a CDK app via environment variables. The repo will show how you can, through the environment variables, configure the CDK app to provision resources dynamically while keeping the state for the app. 
 
 
 
@@ -27,7 +27,7 @@ This repository contains source code to configure a CDK app via environment vari
 
 == Solution
 
-The solution uses environment variables, `export <ENVVAR>=<some value>`, to configure the app during deploy, or destroy. If the environment variables are not set, defaults are used. The code in `{repo-name}` directory and  `app.py` in the root directory use the environment variables to configure the CDK app.
+The solution uses environment variables, `export <ENVVAR>=<some value>`, to configure the app during a CDK `deploy`, or `destroy`. If the environment variables are not set, defaults are used. The code in `{repo-name}` directory and  `app.py` in the root directory use the environment variables to configure the CDK app.
 
 The sample code deploys the following:
 
@@ -43,7 +43,7 @@ The QUEUE_COUNT determines the SNS TOPIC as well.
 
 [CAUTION]
 ====
-Do not set the Counts to a high number. The CDK app will deploy the resources dynamically and charges will apply.
+Charges do apply. Do not set the Counts to a high number. The CDK app will deploy the resources dynamically.
 ====
 
 
@@ -97,13 +97,13 @@ You need to make sure your resources are unique every time a new stack is deploy
 ====
 
 
-== USEFUL COMMANDS
 
-=== Clone the repo
+
+== Clone the repo
 [source,bash]
 git clone https://github.com/aws-samples/configurable-dynamic-cdk-resource-provisioning-python.git
 
-
+== USEFUL COMMANDS
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 === Installing CDK Toolkit globally pass:[<strong><u>(If you don't have it installed already)</u></strong>]
@@ -162,7 +162,7 @@ To add additional dependencies, for example other CDK libraries, just add to
 your requirements.txt file and rerun the `pip install -r requirements.txt`
 command.
 
-=== Useful commands
+=== Other useful commands
 
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
