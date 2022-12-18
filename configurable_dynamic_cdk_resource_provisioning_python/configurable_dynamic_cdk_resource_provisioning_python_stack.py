@@ -36,7 +36,7 @@ def create_hash(input):
 deploy_region = os.getenv('DEPLOY_REGION', os.getenv('CDK_DEFAULT_REGION', 'us-east-1'))
 deploy_account = os.getenv('DEPLOY_ACCOUNT', os.getenv('CDK_DEFAULT_ACCOUNT', 'NO-ACCOUNT'))
 app_name = os.getenv('applicationName', create_hash(deploy_account+deploy_region))
-bucket_names=os.getenv('BUCKET_NAMES', 'bucket1,bucket2,bucket3')
+bucket_names=os.getenv('BUCKET_NAMES', '"[CHANGEME][CHANGEME]"')
 number_of_queues = os.getenv('NUMBER_OF_QUEUES', 1)
 queue_name = os.getenv('QUEUE_NAME', 'testqueue1')
 comp_queue_names = app_name+"-"+queue_name

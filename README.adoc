@@ -67,7 +67,8 @@ export DEPLOY_ACCOUNT=<SET-ACCOUNT>
 . How can I configure the CDK app to use environment variables to set the resource names based on a list?
 ..  For this code, we use the following list:
 ... S3 bucket name(s), a string of bucket names separated by a comma
-
+[NOTE]
+*  ***There is an intentional error introduced on `Line 39` of the `{application-name}.py` file in the `{application-name}` directory for the default bucket names . You must set this value to for example '<SOMEUNIQUEBUCKETNAME>,<SOMEOTHERBUCKETNAME>' to deploy the app. 
 .. Make sure you set the defaults  in the `{repo-name}.py` file in the {repo-name} directory
 .. `BUCKET_NAMES` is a string of bucket names separated by a comma. The code will split the string and create a list of bucket names.
 .. If you set the string to `bucket1,bucket2,bucket3`, the code will create 3 buckets with the names `bucket1`, `bucket2`, and `bucket3`
